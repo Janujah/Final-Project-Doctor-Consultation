@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+
+#login-1{
+  border-radius: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* .gradient-custom {
+  background: #6a11cb;
+  
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  } */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#login-img{
+  height: 200px;
+}
+#login-form{
+    /* background: linear-gradient(to right, #AB9551 100% #FFFCFC 100% #AB9551 33%); */
+      background: linear-gradient(to bottom,   #FFFCFC,  #AB9551);
+     color: black;
+     border-radius: 1rem;
+
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #login-login{
+    color: #110942;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .btn-outline-light:hover, .btn-outline-light:focus {
+    color: white;        /* Keeps the text color the same */
+    background-color: transparent;  /* Keeps the background the same */
+    border-color: inherit; /* Keeps the border the same */
+    box-shadow: none;      /* Removes any applied shadows */
 }
+
+  
