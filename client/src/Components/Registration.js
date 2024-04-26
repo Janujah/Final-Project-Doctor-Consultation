@@ -1,69 +1,92 @@
-import React from 'react'
-import logo from '../Components/logo.png'
+import React, { useState } from 'react';
+import styles from '../CSS/SignUpPage.module.css'; 
+import logo from '../Components/logo.png'; 
 
-function login() {
-    return (
+function SignUpPage() {
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if(password !== confirmPassword) {
+      alert("Passwords do not match.");
+      return;
+    }
+    console.log('SignUp Details:', { fullName, email, username, password });
+  };
+
+  return (
+    <div className={styles.container}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <div>
-            <section class="vh-100 gradient-custom" id='login'>
-                <div class="container py-5 h-100">
-                    <div class="row d-flex justify-content-center align-items-center h-100">
-                        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                            <div class="card bg-dark text-white" id='login-1' >
-                                <div class="card-body p-5 text-center" id='login-form'>
-
-                                    <div class="mb-md-5 mt-md-4 pb-5">
-                                        <img src={logo} alt='logo' id='login-img'/>
-
-                                        <h2 class="fw-bold mb-2 " id='login-login'>Sign up</h2>
-                                        <p class="text-black-50 mb-5">Get the best from Us</p>
-
-                                        <div data-mdb-input-init class="form-outline form-white mb-4">
-                                            <label class="form-label" for="typeEmailX">Full name</label>
-                                            <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder='Enter your full name' />
-                                        </div>
-
-                                        <div data-mdb-input-init class="form-outline form-white mb-4">
-                                            <label class="form-label" for="typePasswordX">Email Address</label>
-                                            <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder='Enter your Email Address'/>
-                                        </div>
-
-                                        <div data-mdb-input-init class="form-outline form-white mb-4">
-                                            <label class="form-label" for="typePasswordX">User Name</label>
-                                            <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder='Enter your user Name'/>
-                                        </div>
-
-                                        <div data-mdb-input-init class="form-outline form-white mb-4">
-                                            <label class="form-label" for="typePasswordX">Password</label>
-                                            <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder='..........'/>
-                                        </div>
-
-                                        <div data-mdb-input-init class="form-outline form-white mb-4">
-                                            <label class="form-label" for="typePasswordX">Re-enter Password</label>
-                                            <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder='..........'/>
-                                        </div>
-
-
-                                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" id='login-btn' type="submit" style={{backgroundColor:'#110942'}}>Sign up</button>
-
-                                        <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                                            <a href="#!" class="text-black"><i class="fab fa-facebook-f fa-lg"></i></a>
-                                            <a href="#!" class="text-white"><i class="fab fa- fa-lg mx-4 px-2"></i></a>
-                                            <a href="#!" class="text-black"><i class="fab fa-google fa-lg"></i></a>
-                                        </div>
-
-                                    </div>
-
-                                    <div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <img src={logo} alt="Company Logo" className={styles.logo} style={{height:'250px',width:'250px'}}/>
         </div>
-    )
+        <h3 className={styles.heading}>Sign Up</h3>
+        <p style={{fontSize:'21px'}}>Create your account, it's free and only takes a minute.</p>
+        <div className={styles.inputGroup}>
+          <label htmlFor='fullName'>Full Name</label>
+          <input
+            type='text'
+            id='fullName'
+            placeholder='Enter your full name'
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            required
+          />
+        </div>
+        <div className={styles.inputGroup}>
+          <label htmlFor='email'>Email</label>
+          <input
+            type='email'
+            id='email'
+            placeholder='Enter your email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className={styles.inputGroup}>
+          <label htmlFor='username'>Username</label>
+          <input
+            type='text'
+            id='username'
+            placeholder='Create a username'
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+        </div>
+        <div className={styles.inputGroup}>
+          <label htmlFor='password'>Password</label>
+          <input
+            type='password'
+            id='password'
+            placeholder='Create a password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <div className={styles.inputGroup}>
+          <label htmlFor='confirmPassword'>Confirm Password</label>
+          <input
+            type='password'
+            id='confirmPassword'
+            placeholder='Confirm your password'
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button className={styles.signUpButton} type="submit">
+          Sign Up
+        </button>
+      </form>
+    </div>
+  );
 }
 
-export default login
+export default SignUpPage;

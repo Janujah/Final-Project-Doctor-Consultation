@@ -30,5 +30,18 @@
     border-color: inherit; /* Keeps the border the same */
     box-shadow: none;      /* Removes any applied shadows */
 }
-
-  
+.nav-link{
+  color: black;
+  font-size: 2px;
+}
+.nav-navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+/* .App{
+  padding-left: 90px;
+}
+   */

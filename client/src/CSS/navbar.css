@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Set a background color */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.logo-container {
+    padding-left: 20px; /* Adjust the padding to align logo properly */
+    height: 130px;
+
+}
+
+.logo {
+    height: 180px; 
+    width: 200px;
+    margin-left: 100px;
+    /* margin-bottom: 300px; */
+    /* margin-top: 0; */
+
+}
+
+.nav-links {
+    list-style-type: none; /* Remove default list style */
+    margin: 0;
+    padding-right: 30px; /* Adjust spacing on the right */
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nav-item {
+    margin-left: 20px; /* Space between items */
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Dark grey color for the text */
+    font-size: 20px;
+    font-weight: 500; /* Make the font a bit bolder */
+}
+
+.nav-link.active {
+    color: #0e0737; /* Highlight color for the active link */
+}
+
+.login-button {
+    background-color: #110942;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+}
+
+.login-button:hover {
+    background-color: #0e0737;
+}
