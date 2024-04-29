@@ -10,7 +10,7 @@ function Footer() {
                 <ul className="footer-links">
                     <li><a href="/ourservices">Our Services</a></li>
                     <li><a href="/doctors">Doctors</a></li>
-                    <li><a href="/equipment">Equipments</a></li>
+                    <li><a href="/equipment">Ortho Resourses</a></li>
                 </ul>
             </div>
             <div className="footer-bottom">

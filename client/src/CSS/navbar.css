@@ -4,7 +4,7 @@
     align-items: center;
     padding: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff; /* Set a background color */
+    background-color: #fff; 
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,52 +12,52 @@
     background-color: #fff;
 }
 
-.logo-container {
-    padding-left: 20px; /* Adjust the padding to align logo properly */
-    height: 130px;
+/* .logo-container { */
+    /* padding-left: 20px;  */
+    /* height: 130px; */
 
-}
+/* } */
 
 .logo {
-    height: 180px; 
-    width: 200px;
-    margin-left: 100px;
+    height: 100px; 
+    width: 180px;
+    margin-left: 190px;
+    padding: 10px;
     /* margin-bottom: 300px; */
     /* margin-top: 0; */
 
 }
 
 .nav-links {
-    list-style-type: none; /* Remove default list style */
+    list-style-type: none;
     margin: 0;
-    padding-right: 30px; /* Adjust spacing on the right */
+    padding-right: 30px; 
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .nav-item {
-    margin-left: 20px; /* Space between items */
+    margin-left: 20px; 
 }
 
 .nav-link {
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Dark grey color for the text */
+    text-decoration: none; 
+    color: black; 
     font-size: 20px;
-    font-weight: 500; /* Make the font a bit bolder */
+    font-weight: 500; 
 }
 
 .nav-link.active {
-    color: #0e0737; /* Highlight color for the active link */
+    color: #0e0737; 
 }
-
 .login-button {
     background-color: #110942;
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 20px;
+    /* cursor: pointer; */
     transition: background-color 0.3s;
     width: 150px;
 }

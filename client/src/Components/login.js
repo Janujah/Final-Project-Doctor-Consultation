@@ -11,11 +11,13 @@ function LoginPage() {
     console.log('Login Details:', { email, password });
   };
 
+  
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container}><br/><br/><br/>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div >
-        <img src={logo} alt="Company Logo" className={styles.logo} style={{height:'250px',width:'250px'}}/>
+        <img src={logo} alt="Company Logo" className={styles.logo} style={{height:'120px',width:'250px'}}/>
         </div>
         <h3 className={styles.heading}>Login</h3>
         <p style={{fontSize:'21px',textAlign:'center'}}>Welcome back! Please login to your account.</p>

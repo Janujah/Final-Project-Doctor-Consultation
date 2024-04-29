@@ -10,14 +10,45 @@ const serviceData = [
     },
     {
         id: 2,
-        title: 'Internists',
-        imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNPbC7Nc6FInRTsDZMSYSpHDxPhEG_KpDqF9TD8ENJzw&s'
+        title: '',
+        imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS485q8k50nnA88E6MvlajvmxTzRsKx-M6LJMExF7iABpe_ilCkxXEwpQNwTeH1-7viQP8&usqp=CAU'
     },
     {
         id: 3,
         title: 'General Pediatricians',
-        imageUrl: 'https://www.pediatrics.wisc.edu/wp-content/uploads/2022/03/Mathur-with-patient-300x200.jpg'
+        imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWu_w10AFDN3JnQDawu5jvHxxKKpHMYootXt98lijIQg&s'
     },
+    {
+        id: 2,
+        title: 'name',
+        imageUrl: 'https://orthoimplantsindia.com/wp-content/uploads/2023/02/Orthopedic-Implants-Manufacturer.jpg'
+    },
+    {
+        id: 2,
+        title: 'name',
+        imageUrl: 'https://orthoimplantsindia.com/wp-content/uploads/2023/02/Orthopedic-Implants-Manufacturer.jpg'
+    },
+    {
+        id: 2,
+        title: 'name',
+        imageUrl: 'https://orthoimplantsindia.com/wp-content/uploads/2023/02/Orthopedic-Implants-Manufacturer.jpg'
+    },
+    {
+        id: 2,
+        title: 'name',
+        imageUrl: 'https://orthoimplantsindia.com/wp-content/uploads/2023/02/Orthopedic-Implants-Manufacturer.jpg'
+    },
+    {
+        id: 2,
+        title: 'name',
+        imageUrl: 'https://orthoimplantsindia.com/wp-content/uploads/2023/02/Orthopedic-Implants-Manufacturer.jpg'
+    },
+    {
+        id: 2,
+        title: 'name',
+        imageUrl: 'https://orthoimplantsindia.com/wp-content/uploads/2023/02/Orthopedic-Implants-Manufacturer.jpg'
+    },
+    
  
    
     // Add more services as needed

@@ -19,7 +19,6 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission, like sending data to an API
         console.log(formData);
         alert('Message sent!');
     };

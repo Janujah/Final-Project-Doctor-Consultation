@@ -1,39 +1,43 @@
-/* src/components/ContactForm.css */
+/* src/CSS/contactUs.css */
 form {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    width: 600px;         /* Set form width to 600px */
+    height: 700px;        /* Set form height to 700px */
+    margin: 20px auto;    /* Center the form horizontally */
+    padding: 20px;        /* Padding inside the form */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow around the form */
+    border-radius: 8px;   /* Rounded corners */
+    display: flex;        /* Using Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Distribute space between items */
 }
 
 form div {
-    margin-bottom: 12px;
+    margin-bottom: 12px; /* Space between form fields */
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Space below each label */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%;         /* Full width to fit form */
+    padding: 8px;        /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border around input fields */
+    border-radius: 4px;  /* Rounded corners for inputs */
 }
 
 button {
-    padding: 10px 20px;
-    background-color:  #0e0737;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px 20px;  /* Padding inside the button */
+    background-color: #0e0737; /* Dark purple background */
+    color: white;        /* White text color */
+    border: none;        /* No border */
+    border-radius: 4px;  /* Rounded corners for the button */
+    /* cursor: pointer;     */
 }
 
 button:hover {
-    background-color:  #0e0737;
+    background-color: #0e0737; /* Darken the button on hover */
 }

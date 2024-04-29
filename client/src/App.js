@@ -35,8 +35,8 @@ function App() {
       <Route path='/Doctor/signup' element={<DocRegistration/>}/>
       <Route path='/Technician/signup' element={<TechRegistration/>}/>
       <Route path='/ourservices' element={<OS/>}/>
-      <Route path='/doctors' element={<Doc/>}/>
-      <Route path='/equipments' element={<Equi/>}/>
+      <Route path='/our-services/doctors' element={<Doc/>}/>
+      <Route path='/our-services/equipments' element={<Equi/>}/>
       <Route path='/contactus' element={<CU/>}/>
       <Route path='/' element={<LandingPage/>}/>
 

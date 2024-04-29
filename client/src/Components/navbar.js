@@ -5,8 +5,8 @@ import '../CSS/navbar.css';
 function Navbar() {
     return (
         <div className="navbar">
-            <div className="logo-container">
-                <img src={logo} alt="Logo" className="logo"/>
+            <div>
+                <img src={logo} alt="Logo" className="logo" />
             </div>
             <nav>
             <ul className="nav-links">
@@ -17,10 +17,10 @@ function Navbar() {
                     <a className="nav-link" href="/ourservices">Our Services</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/doctors">Doctors</a>
+                    <a className="nav-link" href="/our-services/doctors">Doctors</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/equipments">Equipment</a>
+                    <a className="nav-link" href="/our-services/equipments">Ortho Resourses</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="/contactus">Contact Us</a>

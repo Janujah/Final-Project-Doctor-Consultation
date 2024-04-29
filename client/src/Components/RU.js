@@ -11,22 +11,22 @@ function Who() {
             <h1 style={{fontWeight:'bold' ,color:'#110942'}}>Your Role</h1>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'nowrap', width: '100%', gap: '20px' }}>
                 <br></br><br></br>
-               <a href='/user/signup'> <div className="card text-bg-light mb-3" style={{ maxWidth: '35rem' , height:'35rem' }}>
+               <a href='/user/signup' style={{ textDecoration:'none' }}> <div className="card text-bg-light mb-3" style={{ maxWidth: '35rem' , height:'35rem' }}>
                     <div className="card-body">
                         <a className="card-title" href='/user/signup'><img src={user} alt="User" style={{height:'28rem'}} /></a>
                         <h3 style={{ textAlign: 'center' }}>Normal User</h3>
                     </div>
                 </div></a>
-                <a href='/Doctor/signup'><div className="card text-bg-light mb-3" style={{ maxWidth: '35rem' , height: '35rem'}}>
+                <a href='/Doctor/signup' style={{ textDecoration:'none' }}><div className="card text-bg-light mb-3" style={{ maxWidth: '35rem' , height: '35rem'}}>
                     <div className="card-body">
                         <a className="card-title" href='/Doctor/signup'><img src={doc} alt="User" style={{height:'450px'}}/></a>
                         <h3 style={{ textAlign: 'center' }}>Doctor</h3>
                     </div>
                 </div></a>
-                <a href='/technician/signup'><div className="card text-bg-light mb-3" style={{ maxWidth: '40rem' , height: '35rem'}}>
+                <a href='/technician/signup' style={{ textDecoration:'none' }}><div className="card text-bg-light mb-3" style={{ maxWidth: '40rem' , height: '35rem'}}>
                     <div className="card-body">
                         <a className="card-title" href='/Technician/signup'><img src={tech} alt="User" style={{height:'450px'}}/></a>
-                        <h3 style={{ textAlign: 'center',textDecoration:'none' }}>Technician</h3>
+                        <h3 style={{ textAlign: 'center'}}>Technician</h3>
                     </div>
                 </div></a>
             </div>
