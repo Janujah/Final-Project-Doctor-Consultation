@@ -2,8 +2,8 @@ import './App.css';
 import {Route, Routes} from 'react-router-dom';
 import Login from './Components/login'
 import Registration from './Components/Registration'
-import DocRegistration from './Components/Registration'
-import TechRegistration from './Components/Registration'
+import DocRegistration from './Components/Doc-Regis'
+import TechRegistration from './Components/Tech-registration'
 import Who from './Components/RU'
 import Forgot from './Components/forgo';
 import Verify from './Components/verify';
@@ -13,7 +13,10 @@ import LandingPage from './pages/landing-page';
 import OS from './pages/About'
 import Doc from './pages/Doctor'
 import Equi from './pages/Equipment'
-import CU from './pages/contactus'
+import CU from './pages/contactus';
+import DocHome from './pages/Doctorhome'
+import Docservice from './Doctors/Docourservices';
+import Appointment from './Doctors/Appoinment'
 
 
 
@@ -39,6 +42,14 @@ function App() {
       <Route path='/our-services/equipments' element={<Equi/>}/>
       <Route path='/contactus' element={<CU/>}/>
       <Route path='/' element={<LandingPage/>}/>
+      <Route path='/Doctors' element={<DocHome/>}/>
+      <Route path='/doctors/ourservices' element={<Docservice/>}/>
+      <Route path='/doctors/Appointment' element={<Appointment/>}/>
+      <Route path='/doctors/ContactUs' element={<CU/>}/>
+
+
+
+
 
 
 

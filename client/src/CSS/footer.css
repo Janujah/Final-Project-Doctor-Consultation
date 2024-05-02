@@ -6,7 +6,7 @@
     padding: 20px 40px; /* Top-bottom, Left-right padding */
     font-size: 16px; /* Base text size */
     line-height: 1.6; /* Spacing between lines */
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .footer-content {
@@ -42,8 +42,8 @@
 }
 
 .footer-bottom {
-    border-top: 1px solid #34495e; /* Lighter blue top border */
-    padding-top: 10px; /* Padding above the text */
+     border-top: 1px solid #34495e;
+        padding-top: 10px; 
     margin-top: 20px; /* Space before the copyright section */
     text-align: center;
 }

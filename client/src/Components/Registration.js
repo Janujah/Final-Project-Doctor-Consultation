@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../CSS/SignUpPage.module.css';
 import logo from '../Components/logo.png';
-import axios from 'axios';
 
 function SignUpPage() {
   const [fullName, setFullName] = useState('');

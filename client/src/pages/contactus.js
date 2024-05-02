@@ -7,7 +7,7 @@ function ContactPage() {
     return (
         <div>
             <Navbar /><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-            <h1 style={{ textAlign: 'center', fontWeight: '800', color: '#0e0737', fontSize: '50px' }}>Contact Us</h1>
+            <h1 style={{ textAlign: 'center', fontWeight: '800', color: '#0e0737', fontSize: '80px' }}>Contact Us</h1>
             <ContactForm />
             <Footer/>
         </div>

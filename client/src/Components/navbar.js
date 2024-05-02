@@ -3,6 +3,7 @@ import logo from '../Components/logo.png';
 import '../CSS/navbar.css'; 
 
 function Navbar() {
+    
     return (
         <div className="navbar">
             <div>

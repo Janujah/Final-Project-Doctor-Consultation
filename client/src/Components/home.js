@@ -1,6 +1,5 @@
 import React from 'react';
 import backgroundImage from './pexels-tima-miroshnichenko-5452196.jpg'; 
-import styles from '../CSS/home.css'; 
 
 function LandingPage() {
   return (
