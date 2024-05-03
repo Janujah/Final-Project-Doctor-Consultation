@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../CSS/login.module.css'; 
 import logo from '../Components/logo.png'; 
+import jwtDecode from 'jwt-decode';
 
 function LoginPage() {
   const [email, setEmail] = useState('');
@@ -10,6 +11,7 @@ function LoginPage() {
     event.preventDefault();
     console.log('Login Details:', { email, password });
   };
+
 
   
 

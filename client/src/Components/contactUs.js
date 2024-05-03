@@ -38,7 +38,7 @@ function ContactForm() {
         setFormData(prevState => ({
             ...prevState,
             [name]: value
-        }));
+        }));    
     };
 
     const handleSubmit = (e) => {

@@ -17,6 +17,14 @@ import CU from './pages/contactus';
 import DocHome from './pages/Doctorhome'
 import Docservice from './Doctors/Docourservices';
 import Appointment from './Doctors/Appoinment'
+// import Admin from './Admin/AdminHome'
+import Users from './Admin/UserAdmin';
+import Doctors from './Admin/Doctoradmin';
+import Technicians from './Admin/techniadmin';
+import Consultations from './Admin/consultation';
+import Payments from './Admin/payment';
+import Profile from './Components/userprofile';
+
 
 
 
@@ -46,11 +54,12 @@ function App() {
       <Route path='/doctors/ourservices' element={<Docservice/>}/>
       <Route path='/doctors/Appointment' element={<Appointment/>}/>
       <Route path='/doctors/ContactUs' element={<CU/>}/>
-
-
-
-
-
+      <Route path="/Admin/users" element={<Users/>} />
+      <Route path="/Admin/Doctors" element={<Doctors/>} />
+      <Route path="/Admin/Technicians" element={<Technicians/>} />
+      <Route path="/Admin/Consultation" element={<Consultations/>} />
+      <Route path="/Admin/Payment" element={<Payments/>} />
+      <Route path="/profile" element={<Profile/>} />
 
 
 
