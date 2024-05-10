@@ -12,19 +12,19 @@ function Navbar() {
       <nav>
         <ul className="nav-links">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/doctors">Home</a>
-          </li>
+            <a className="nav-link" aria-current="page" href="/doctors">Home</a>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
             <a className="nav-link" href="/doctors/ourservices">Our Services</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
             <a className="nav-link" href="/doctors/Appointment">Appointments</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
             <a className="nav-link" href="/doctors/ContactUs">Contact Us</a>
-          </li>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <li className="nav-item">
-            <a className="nav-link" href="">
+            <a className="nav-link" href="/doctors/Create-profile">
               <button className="login-button" style={{width:'200px',height:'55px'}}>Add Profile</button>
             </a>
           </li>

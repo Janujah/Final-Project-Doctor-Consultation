@@ -1,29 +1,35 @@
-const  mongoose = require('mongoose');
-const express = require('express')
-const jwt = require('jsonwebtoken')
-const app = express()
-app.use(express.json)
+// const express = require('express');
+// const bcrypt = require('bcryptjs'); 
+// const Users = require('../Models/Signupmodel');
+// // import { errorHandler } from '../utils/error.js';
+// // import jwt from 'jsonwebtoken';
 
-function login(){
-app.post('/login', async (req,res) => {
-    const {username, password} = req.body;
-    try{
-        const user = await UserActivation.findOne({username});
-        if(!user){
-            return res.status(404)._construct.send("User not found")
-        }
-        const match = await bcrypt.compare(password, user.passwordhash)
-        if (match){
-            const token =jwt.sign({username: user.username},'your-secret-key', {expiresIn :'24h'})
-            res.json({token})
-        } else {
-            res.status(401).send('invalid credentials')
-        }
-    }catch(err){
-        res.status(500).send('error finded')
-    }
-    
-})
-}
+// const app = express();
+// app.use(express.json());
 
-module.exports = login;
+
+
+
+// export const signin = async (req, res, next) => {
+//   const { email, password } = req.body;
+//   try {
+//     const validUser = await Users.findOne({ email });
+//     if (!validUser) return next(errorHandler(404, 'User not found'));
+//     const validPassword = bcrypt.compareSync(password, validUser.password);
+//     if (!validPassword) return next(errorHandler(401, 'wrong credentials'));
+//     const token = jwt.sign({ id: validUser._id }, process.env.JWT_SECRET);
+//     const { password: hashedPassword, ...rest } = validUser._doc;
+//     const expiryDate = new Date(Date.now() + 3600000);
+//     res
+//       .cookie('access_token', token, { httpOnly: true, expires: expiryDate })
+//       .status(200)
+//       .json(rest);
+//   } catch (error) {
+//     next(error);
+//   }
+// };
+
+
+// export const signout = (req, res) => {
+//   res.clearCookie('access_token').status(200).json('Signout success!');
+// };

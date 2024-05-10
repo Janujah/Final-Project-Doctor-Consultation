@@ -13,19 +13,19 @@ function Navbar() {
             <ul className="nav-links">
                 <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li className="nav-item">
                     <a className="nav-link" href="/ourservices">Our Services</a>
-                </li>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li className="nav-item">
                     <a className="nav-link" href="/our-services/doctors">Doctors</a>
-                </li>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li className="nav-item">
                     <a className="nav-link" href="/our-services/equipments">Ortho Resourses</a>
-                </li>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li className="nav-item">
                     <a className="nav-link" href="/contactus">Contact Us</a>
-                </li>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li className="nav-item">
                     <a className="nav-link" href="/login">
                         <button className="login-button">Login</button>

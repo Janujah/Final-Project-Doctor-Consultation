@@ -50,7 +50,7 @@ function ContactForm() {
     return (
         <form onSubmit={onSubmit} className='form'>
             <div>
-                <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1714574452~exp=1714578052~hmac=fcd3d2293312c7a50ed65766306df081c799b0a5329960f33fe4305396da9084" style={{height:'555px'}}></img>
+                <img src="https://www.shutterstock.com/image-photo/portrait-beautiful-smiling-nurse-talking-600nw-1469135153.jpg" style={{height:'350px', marginTop:'105px'}}></img>
             </div>
             <div style={{marginTop:'96px'}}>
             <div>

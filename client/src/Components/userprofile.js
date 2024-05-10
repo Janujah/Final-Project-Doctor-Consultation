@@ -1,12 +1,10 @@
-// src/components/UserProfile.js
 import React, { useState } from 'react';
 
 function UserProfile() {
-    // Example user and time slot data (normally you'd fetch this from a server)
     const userData = {
-        name: "Alice Johnson",
-        email: "alice@example.com",
-        role: "Admin",
+        name: "Dr.Hariharan",
+        email: "Hariharan@gmail.com",
+        role: "Doctor",
         profileImage: "https://via.placeholder.com/150",
     };
 
@@ -21,11 +19,12 @@ function UserProfile() {
 
     ];
 
-    // State to track the selected time slot
     const [selectedSlot, setSelectedSlot] = useState(null);
 
     return (
+        <div style={{ background:'linear-gradient(to bottom,   #FFFCFC,  #AB9551)'}}>
         <div className="profile-container">
+
             <div className="profile-header">
                 <img src={userData.profileImage} alt="Profile" className="profile-image" />
                 <h1>{userData.name}</h1>
@@ -56,6 +55,7 @@ function UserProfile() {
                     </tbody>
                 </table>
             </div>
+        </div>
         </div>
     );
 }

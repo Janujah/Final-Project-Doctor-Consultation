@@ -1,24 +1,64 @@
+// const Mongoose = require('mongoose');
+// const schema = Mongoose.Schema ({
+//     fullName:{
+//         type:String,
+//         // require: true
+//     },
+//     Age:{
+//         type:Number,
+//         // require: true
+//     }, 
+//     userName:{
+//         type:String
+//     },  
+//     email:{
+//         type:String,
+//         // require: true
+//     },
+//     password:{
+//         type:String,
+//         // require: true
+//     },
+//     place:{
+//         type:String,
+//         // require: true
+//     },
+//     position:{
+//         type:String
+//     },
+//     registeredId:{
+//         type:String
+//     }
+    
+// });
+
+// const Tech = Mongoose.model('Tecgnicians',schema);
+// module.exports = Tech;
+
 const Mongoose = require('mongoose');
-const schema = Mongoose.Schema ({
+const schema = new Mongoose.Schema ({
     fullName:{
         type:String,
-        require: true
+        // require: true
     },
     Age:{
         type:Number,
-        require: true
-    },   
+        // require: true
+    }, 
+    userName:{
+        type:String
+    },  
     email:{
         type:String,
-        require: true
+        // require: true
     },
     password:{
         type:String,
-        require: true
+        // require: true
     },
     place:{
         type:String,
-        require: true
+        // require: true
     },
     position:{
         type:String
@@ -26,8 +66,6 @@ const schema = Mongoose.Schema ({
     registeredId:{
         type:String
     }
-    
 });
-
-const NormalUser = Mongoose.Schema('Technicians',schema);
-module.exports = NormalUser;
+const Tech = Mongoose.model('Technicians',schema);
+module.exports = Tech;

@@ -1,5 +1,4 @@
 /* Navbar */
-/* src/components/Navbar.css */
 .admin-navbar {
     background: #333;
     color: white;
@@ -22,7 +21,7 @@
     font-weight: bold;
   }
   
-  /* src/components/UserTable.css */
+  /* UserTable.css */
 .user-management-container {
     margin: 20px;
 }
@@ -75,7 +74,7 @@ button {
 button:hover {
     opacity: 0.8;
 }
-/* src/UserProfile.css */
+/* UserProfile.css */
 .profile-container {
     max-width: 800px;
     margin: 20px auto;
@@ -131,4 +130,47 @@ button:hover {
 
 .profile-details h2 {
     margin-top: 20px;
+}
+/* DoctorCard.css */
+.doctor-card {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    padding: 40px;
+
+}
+
+.doctor-card:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.doctor-image {
+    flex-shrink: 0;
+    /* width: 80px; */
+    /* height: 80px; */
+    /* border-radius: 50%; */
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.doctor-info {
+    flex-grow: 1;
+}
+
+.doctor-name {
+    font-size: 1.6em;
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.doctor-position {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
 }

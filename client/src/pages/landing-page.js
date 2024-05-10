@@ -4,6 +4,7 @@ import Home from '../Components/home'
 import About from './About'
 import ContactUs from './contactus'
 import Footer from '../Components/footer' 
+import '../CSS/home.css'
 
 
 function landingpage() {

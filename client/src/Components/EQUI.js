@@ -58,12 +58,12 @@ function ServicesDisplay() {
     return (
         <div className="services-container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
             {serviceData.map(service => (
-                <ServiceCard
+                <a href='/Ortho/Profile' style={{textDecoration:'none'}}><ServiceCard
                     key={service.id}
                     title={service.title}
                     description={service.description}
                     imageUrl={service.imageUrl}
-                />
+                /></a>
             ))}
         </div>
     );
